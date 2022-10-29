@@ -1,8 +1,6 @@
 import React from 'react'
 import Navbar from "../components/Navbar/Navbar";
 import Footer from './Footer/Footer';
-// import { Inter } from '@next/font/google'
-// const inter = Inter()
 
 const Layout = ({ children }) => {
   return (
