@@ -7,7 +7,7 @@ export default function Document() {
         // Aca agregarias estilos, fonts, icons
       />
       <body>
-        <Main />
+        <Main/>
         <NextScript />
       </body>
     </Html>
