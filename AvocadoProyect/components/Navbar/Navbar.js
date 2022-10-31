@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
         <nav className='navbar'>
             <menu>
-                <Image objectFit='contain' objectPosition='left' width={70} height={70} className='logo' src={logoImage}/>
+                <Image objectFit='contain' objectPosition='left' width={60} height={60} className='logo' src={logoImage}/>
                 <Link href="/">
                     <a className='link'>Home</a>
                 </Link>
@@ -21,12 +21,11 @@ const Navbar = () => {
                 .navbar {
                     background: #c7ffd6;
                     padding: 4px;
-                    min-height: 6vh
+                    min-height: 6vh;
                 }
                 .link {
-                    margin-left: 20px;
-                    margin-right: 20px;
-                    font-size: 18px
+                    margin-left: 50px;
+                    font-size: 18px;
                 }
                 .logo {
                 }
@@ -34,7 +33,8 @@ const Navbar = () => {
                     padding-inline-start: 40px;
                     margin-block-start: .5em;
                     margin-block-end: .5em;
-                    align-self: center
+                    display: flex;
+                    align-items: center;
                 }
             `}
         </style>
