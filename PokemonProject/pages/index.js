@@ -7,7 +7,7 @@ const index = () => {
   const [data, setData] = useState(undefined)
 
   const handleChange = (event) => {
-    setPokemon(event.target.value)
+    setPokemon(event.target.value.toLowerCase())
   }
 
   useEffect(() => {
@@ -17,7 +17,6 @@ const index = () => {
   }, [data])
 
   const handleSubmit = () => {
-    debugger
     axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
     .then(res => setData(res.data))
     .catch(err => console.log(err))
