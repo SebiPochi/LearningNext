@@ -1,0 +1,12 @@
+.navbar {
+    background-color: #edcc4a;
+    min-height: 6vh;
+    justify-content: left;
+    display: flex;
+}
+
+.logo {
+    height: 100%;
+    width: 25%;
+    object-position: left;
+}

@@ -1,0 +1,23 @@
+.container {
+    background: #757575;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+.text {
+    font-size: 18px;
+}
+.logo {
+    transition: .5s;
+    border-radius: 20px;
+}
+.logo:hover {
+    transition: .5s;
+    background: #c198ff;
+    border-radius: 20px;
+}
