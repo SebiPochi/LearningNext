@@ -19,7 +19,6 @@ const Footer = () => {
                     align-items: center;
                     flex-direction: column;
                     position: absolute;
-                    bottom: 0;
                     width: 100%
                 }
                 .text {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-
+import Image from 'next/image'
 const Home = () => {
   const [productList, setProductList] = useState([])
   useEffect(() => {
@@ -11,16 +11,32 @@ const Home = () => {
   
 
   return (
-    <div>
-        <h1>Hola Mundo!</h1>
-        {
-          productList.map((product) => 
-            <div>
-              {product.id}
-            </div>
-          )
-        }
-    </div>
+    <>
+      <div className='card-container'>
+          {
+            productList.map((product) => 
+              <div className='card'>
+                <p>{product.name}</p>
+                <p>{product.id}</p>
+                <p>${product.price}</p>
+              </div>
+            )
+          }
+      </div>
+      <style jsx>
+          {`
+          .card {
+            background: #f5fff5
+          }
+
+          .card-container{
+            display: flex;
+            flex-flow: column wrap;
+            
+          }
+          `}
+      </style>
+    </>
   )
 }
 
