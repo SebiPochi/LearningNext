@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head
+      
         // Aca agregarias estilos, fonts, icons
       />
       <body>
