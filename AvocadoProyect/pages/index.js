@@ -11,16 +11,19 @@ const Home = () => {
   
 
   return (
-    <div>
-        <h1>Hola Mundo!</h1>
-        {
-          productList.map((product) => 
-            <div>
-              {product.id}
-            </div>
-          )
-        }
-    </div>
+    <>
+      <div className='columns-2 md'>
+          {
+            productList.map((product) => 
+              <div className='p-4 h-40 border-4 '>
+                <p>{product.name}</p>
+                <p>{product.id}</p>
+                <p>${product.price}</p>
+              </div>
+            )
+          }
+      </div>
+    </>
   )
 }
 
